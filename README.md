@@ -1,11 +1,42 @@
-# Start your own "Can of Books" App
+# Can of Books
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**: Evan Cheng, Ben Borden
+**Version**: 1.0.0
 
-## What can books do?
+## Overview
+### Purpose
+The essence of this project revolves around the profound impact books have on our lives. They serve as a gateway to different worlds, offering insights, knowledge, and experiences that shape our understanding and perspectives. This application is not just an academic assignment; it's a journey into recognizing and documenting the transformative power of books. Our goal is to create a personalized digital space where users can keep track of books that have influenced them profoundly and discover new reads that come highly recommended.
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+### What This Application Is About  
 
-## Use this template
+At its core, this application is a CRUD (Create, Read, Update, Delete) web app that focuses on books as its primary resource. It's designed to manage and track information about books that have made an impact on your life and to recommend what to read next. Whether you're looking to reflect on your reading journey, find your next book, or simply organize your reading list, this app aims to be your go-to digital bookshelf.
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+### Technical Overview  
+
+The application is built on a modern tech stack, integrating a React front-end with an Express back-end, all while leveraging a MongoDB database for storage. This architecture not only allows for a responsive and intuitive user interface but also ensures robust and scalable data management.
+
+### Key Features:
+Data Management: At the heart of the application is the ability to effectively manage book data. This includes creating a schema in the back-end to model the book data precisely as we want it represented.
+
+    Database Seeding: Initial seed data will populate the database with a curated list of impactful books, setting the stage for personalization and discovery.
+
+    Reading Data: The application focuses on the 'Read' operation from CRUD for this assignment, enabling users to view a collection of books retrieved from the database through the front-end interface.
+
+    User Interface: A clean and user-friendly interface on the front end allows for an engaging experience as users explore books that have made a mark on their lives or discover new recommendations.
+    
+## Getting Started
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Estimates
+<!-- See below -->
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
