@@ -1,7 +1,7 @@
 {
-  "name": "auth0TestBack",
+  "name": "can-of-books-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server side for Can of Books",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^8.3.1"
   }
 }
