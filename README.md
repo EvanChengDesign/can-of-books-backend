@@ -30,10 +30,13 @@ Data Management: At the heart of the application is the ability to effectively m
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
-## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+## Change Log  
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+04-08-2024 6:45pm - Both repos (backend and frontend) are online.
+04-08-2024 7:45pm - Atlas server connected to backend repo.
+04-08-2024 8:15pm - Backend repo connected to Render.
+
+
 
 ## Estimates
 <!-- See below -->
