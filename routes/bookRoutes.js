@@ -2,17 +2,17 @@ const express = require('express');
 const Book = require('../models/books'); 
 const router = express.Router(); 
 
-// Route to get all books
-async function getBooks(req, res) {
+// GET toute to get all books
+router.get('/', async (req, res) => {
   try {
     const books = await Book.find({}); 
     res.json(books);
   } catch (error) {
     res.status(500).send(error);
   }
-};
+});
 
-// Post route for creating a book
+// POST route for creating a book
 router.post('/', async (req, res) => {
     try {
         const book = new Book(req.body); 
@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Delete route to delete book by ID
+// DELETE route to delete book by ID
 router.delete('/:id', async  (req, res) => {
     try {
         const { id } = req.params;
@@ -37,5 +37,16 @@ router.delete('/:id', async  (req, res) => {
       }
     });
 
-module.exports = getBooks;
+// Delete route to clear books database
+router.delete('/clear', async (req, res) => {
+    try {
+      await Book.deleteMany({});
+      res.json({ message: "All books have been deleted successfully." });
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  });
+  
+
+module.exports = bookRoutes;
 
