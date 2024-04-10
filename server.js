@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const getBooks = require('./routes/bookRoutes');
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
@@ -17,12 +18,12 @@ mongoose.connect(dataBaseURL)
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Could not connect to MongoDB', err));
 
-// Test route
+// Test route 
 app.get('/test', (request, response) => {
   response.send('test request received');
 });
 
-// Books route
-app.get('/books', getBooks);
+// Router from bookRoutes.js that uses router.express as the middleware to handle multiple routes to server.js
+app.use('/books', getBooks);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
