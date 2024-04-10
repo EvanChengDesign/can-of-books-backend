@@ -2,7 +2,7 @@ const express = require('express');
 const Book = require('../models/books'); 
 const router = express.Router(); 
 
-// GET toute to get all books
+// GET route to get all books
 router.get('/', async (req, res) => {
   try {
     const books = await Book.find({}); 
@@ -48,5 +48,5 @@ router.delete('/clear', async (req, res) => {
   });
   
 
-module.exports = bookRoutes;
+module.exports = router;
 

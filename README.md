@@ -106,9 +106,20 @@ Dependencies:
 
     Start time:  4:00pm EST
 
-    Finish time:  11:45pm EST
+    Finish time:  5:45pm EST
 
-    Actual time needed to complete: 2 hours and 15 minutes
+    Actual time needed to complete: 1 hours and 45 minutes
+
+
+    Name of feature: SEED & Database Reset Routes Added  
+
+    Estimate of time needed to complete: 1 hour 30 minutes
+
+    Start time:  5:45pm EST
+
+    Finish time:  6:45pm EST
+
+    Actual time needed to complete: 1 hours
 
 ## Credit and Collaborations
 

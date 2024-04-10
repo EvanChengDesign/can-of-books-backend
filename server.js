@@ -24,6 +24,6 @@ app.get('/test', (request, response) => {
 });
 
 // Router from bookRoutes.js that uses router.express as the middleware to handle multiple routes to server.js
-app.use('/books', bookRoutes);
+app.use('/books', getBooks);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
