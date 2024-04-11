@@ -11,7 +11,6 @@ const bookSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    required: true,
   },
 });
 
