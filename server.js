@@ -27,10 +27,5 @@ app.get('/test', (request, response) => {
 });
 
 
-// app.delete('/books/:id', deleteBook);
-// Router from bookRoutes.js that uses router.express as the middleware to handle multiple routes to server.js
-// app.get('/books', getBooks);
-
-
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));

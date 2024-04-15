@@ -27,7 +27,6 @@ router.post('/', async (req, res) => {
 
 // DELETE route to delete book by ID
 router.delete('/:id', async  (req, res) => {
-  console.log('am i even here');
    try {
         console.log('inside of delete function');
         console.log('req.params.id', req.params.id);
@@ -42,24 +41,22 @@ router.delete('/:id', async  (req, res) => {
       }
 });
 
+// PUT route for updating a book
+router.put('/:id', async (req, res) => {
+  const { id } = req.params;
+  const { title, description, status } = req.body;  
 
-
-// const deleteBook = async (req, res) => {
-//   try {
-//        console.log('inside of delete function');
-//        console.log('req.params.id', req.params.id);
-//        const id = req.params.id;
-//        const deletedBook = await Book.findByIdAndDelete(id);
-//        if (!deletedBook) {
-//            return res.status(404).json({ message: 'Book not found' });
-//        }
-//        res.json({ message: 'Book deleted successfully', deletedBook });
-//    }   catch (error) {
-//        res.status(500).json({ message: error.message });
-//      }
-//    };
-
-
+  try {
+      // Find the book and update it with the new data, return the updated document
+      const updatedBook = await Book.findByIdAndUpdate(id, { title, description, status }, { new: true });
+      if (!updatedBook) {
+          return res.status(404).send('The book with the given ID was not found.');
+      }
+      res.send(updatedBook);
+  } catch (error) {
+      res.status(400).send("Error updating the book: " + error.message);
+  }
+});
 
 // Delete route to clear books database
 router.get('/clear', async (req, res) => {
